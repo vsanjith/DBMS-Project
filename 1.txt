@@ -1,1 +1,1 @@
-This is a sample file ignore it.@gp 
+This is a sample file ignore it.@gp.We'll use this file to write about our project
