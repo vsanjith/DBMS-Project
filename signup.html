@@ -219,12 +219,24 @@
             <input id="village" type="text"   name="village" required/>
           </div>
           <div class="item">
+            <label for="age">Age<span>*</span></label>
+            <input id="age" type="number"   name="age" min="18" required/>
+          </div>
+          <div class="item">
             <label for="username">Username<span>*</span></label>
             <input id="username" type="text"   name="username" required/>
           </div>
           <div class="item">
             <label for="password">Password<span>*</span></label>
             <input id="password" type="password"   name="password" required/>
+          </div>
+          <div class="item">
+            <label for="usertype">usertype<span>*</span></label>
+            <select name="usertype" id="usertype">
+              <option value="user">user</option>
+              <option value="personnel">personnel</option>
+              <option value="organization">organization</option>
+            </select>
           </div>
           <button type="submit" href="/">Submit</button>
         </div>
