@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Personnel</title>
+<meta charset="utf-8">
+<link rel = "stylesheet"
+   type = "text/css"
+   href = "form.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.tab {
+    display: inline-block;
+    margin-left: 40px;
+} 
+  input[type=text], select {
+  width: 10%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=number], select {
+  width: 10%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: 10%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+}
+th {
+  text-align: left;
+}
+
+
+#rig{
+  float: right;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  /*background-color: #f1f1f1;*/
+  background-color: lightgreen;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+
+}
+
+/* Left and right column */
+.column.side {
+  width: 14%;
+  text:color:white;
+    background-color:lightgreen;
+}
+
+/* Middle column */
+.columnmiddle {
+  width: 100%;
+  padding-left: 100px;
+  border-left: 10px;
+  padding-left: 20px;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Rural water supply and sanitation system</h1>
+  <p><img src="./farmer.jpg " style="width: 17%"></p>
+</div>
+
+<div class="topnav">
+  <a href="#">Home</a>
+  <a href="#">Project Status</a>
+  <a href="#">Select a Project</a>
+  <a href="#">Healthcare initiatives</a>
+  
+  <a href="#">Community</a>
+  
+  <a href="#" id="rig">Logout</a>
+</div>
+
+<div class="row">
+  <div class="column side">
+    <h2>Navigation</h2>
+    <p><a href="#">Acheivements</a></p>
+    <p><a href="#">Schemes</a></p>
+    <p><a href="#">Services</a></p>
+    <p><a href="#">Acts/Rules</a></p>
+    <p><a href="#">Circulars & Notifications</a></p>
+    <p><a href="#">Budget</a></p>
+    <p><a href="#">Rainwater Harvesting</a></p>
+    <p><a href="#">Schemes Status</a></p>
+    <p><a href="#">Video Gallery</a></p>
+    <p><a href="#">Documents</a></p>
+
+  </div>
+  <div class="columnmiddle">
+    <h2 style="text-align:center;">Rural water supply and sanitation system</h2>
+    <h3 style="text-align:center;"> Project details</h3>
+    <div class="forms" >
+      <div class="form-style-2-heading">Provide your project information</div>
+      <form action="" method="post">
+      <label for="Project_Type"><span>&nbsp;&nbsp;&nbsp;&nbsp;Project Type &nbsp;&nbsp;&nbsp;</span><select name="Project_Type" class="select-field">
+      <option value="Water">Water</option>
+      <option value="Sanitation">Sanitation</option>
+      </select></label> 
+      <br>
+      <label for="field1"><span>&nbsp;&nbsp;&nbsp;&nbsp;Village&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</pre><input type="text" class="input-field" name="field1" value="" /></label>
+        <br>
+      <label for="field2"><span>&nbsp;&nbsp;&nbsp;&nbsp;Facility&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" class="input-field" name="field2" value="" /></label>
+        <br>
+        <label for="field3"><span>&nbsp;&nbsp;&nbsp;&nbsp;Location&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" class="input-field" name="field3" value="" /></label>
+          <br>
+      <label><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><input type="submit" value="Submit" /></label>
+      </form>
+      </div> 
+
+</body>
+</html>
+</div>
+</body>
+</html>
