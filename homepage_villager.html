@@ -4,8 +4,40 @@
 <title>Home</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
 
+<style>
+.tab {
+    display: inline-block;
+    margin-left: 40px;
+} 
+  input[type=text], select {
+  width: 10%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=number], select {
+  width: 10%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: 10%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
 table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
@@ -99,6 +131,16 @@ body {
   }
 }
 </style>
+
+
+</style>
+
+<script>
+function myFunction() {
+  alert("Are you sure you want to Logout");
+}
+</script>
+
 </head>
 <body>
 
@@ -106,37 +148,39 @@ body {
   <h1>Rural water supply and sanitation system</h1>
 </div>
 
+
 <div class="topnav">
-  <a href="homepage_villager.html">Home</a>
-  <a href="status.html">Project Status</a>
-  <a href="request.html">Apply for a Project</a>
+  <a href="./homepage_villager.html">Home</a>
+  <a href="./status.html">Project Status</a>
+  <a href="./request.html">Apply for a Project</a>
   <a href="#">Healthcare initiatives</a>
   
-  <a href="#">Community</a>
+  <a href="./personnel_publishmsg_page.html">Community</a>
   
-  <a href="#" id="rig">Logout</a>
+  <a href="./signup.html" id="rig" onclick="myFunction()">Logout</a>          
 </div>
 
+
 <div class="row">
-  <div class="column side">
+   <div class="column side">
     <h2>Navigation</h2>
-    <p><a href="#">Acheivements</a></p>
-    <p><a href="#">Schemes</a></p>
-    <p><a href="#">Services</a></p>
-    <p><a href="#">Acts/Rules</a></p>
-    <p><a href="#">Circulars & Notifications</a></p>
+    <p><a href="https://ejalshakti.gov.in/IMISReports/NRDWP_MIS_NationalRuralDrinkingWaterProgramme.html">Acheivements</a></p>
+    <p><a href="http://megphed.gov.in/schemes.htm">Schemes</a></p>
+    <p><a href="http://megphed.gov.in/services.htm">Services</a></p>
+    <p><a href="http://megphed.gov.in/acts.htm">Acts/Rules</a></p>
+    <p><a href="http://megphed.gov.in/acts.htm">Circulars & Notifications</a></p>
     <p><a href="#">Budget</a></p>
-    <p><a href="#">Rainwater Harvesting</a></p>
-    <p><a href="#">Schemes Status</a></p>
-    <p><a href="#">Video Gallery</a></p>
-    <p><a href="#">Documents</a></p>
+    <p><a href="http://megphed.gov.in/resolution.htm">Rainwater Harvesting</a></p>
+    <p><a href="./request.html">Schemes Status</a></p>
+    <p><a href="http://megphed.gov.in/photogallery.htm">Video Gallery</a></p>
+ 
 
   </div>
   
   <div class="columnmiddle">
     <h2>Rural water supply and sanitation system</h2>
 <br>
-<p style="padding-left: 10px">
+<p style="padding-left: 10px ">
 The Rural Water Supply and Sanitation Project seek to improve access by rural populations to safe potable water and to support implementation of a program to supply water to rural populations. There are four components.
 
 <br>
@@ -196,6 +240,3 @@ The fourth component will help provide technical back-stopping, monitoring, and 
 
 
 
- 92%
-2 NRDWP (Support) 5%
-3 NRDWP (Water Quality Monitoring & Surveillance) 3%

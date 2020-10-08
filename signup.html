@@ -1,9 +1,52 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script>
+      function validateForm()
+    {
+        var x = document.forms["myForm"]["fname"].value;
+        var y = document.forms["myForm"]["lname"].value;
+        var z = document.forms["myForm"]["village"].value;
+        var a = document.forms["myForm"]["username"].value;
+        var b = document.forms["myForm"]["password"].value;
+
+  
+        if (x=="") 
+        {
+            alert("Please enter a valid First name");
+              return false;
+        }
+        if (y=="") 
+        {
+            alert("Please enter a valid Last name");
+              return false;
+        }
+        if (z=="") 
+        {
+            alert("Please enter a Village name");
+              return false;
+        }
+        if (a=="") 
+        {
+            alert("Please enter a username");
+              return false;
+        }
+        if (b=="") 
+        {
+            alert("Please enter a valid Password");
+              return false;
+        }
+}
+</script>
+
+
+
+
+
     <title>New Member Registration</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+      
     <style>
       html, body {
       min-height: 100%;
@@ -196,12 +239,22 @@
       display:block;
       padding-bottom:5px;
       }
+
+
+
       }
     </style>
   </head>
   <body>
+
+
+
+
+
+
+
     <div class="testbox">
-      <form action="/">
+        <form name="myForm" onsubmit="return validateForm()" method="post">
         <div class="banner">
           <h1>New User Registration</h1>
         </div>
@@ -237,7 +290,7 @@
               <option value=" local personnel"> local personnel</option>
             </select>
           </div>
-          <button type="submit" href="/">Submit</button>
+          <button type="submit"><a href ="homepage_villager.html" >Submit</a></button>
         </div>
       </form>
     </div>
