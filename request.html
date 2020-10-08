@@ -9,113 +9,114 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-th, td {
-  padding: 5px;
-}
-th {
-  text-align: left;
-}
-
-
-#rig{
-  float: right;
-}
-
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-}
-
-/* Style the header */
-.header {
-  /*background-color: #f1f1f1;*/
-  background-color: lightgreen;
-  padding: 20px;
-  text-align: center;
-}
-
-/* Style the top navigation bar */
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-/* Style the topnav links */
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Change color on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Create three unequal columns that floats next to each other */
-.column {
-  float: left;
-  padding: 10px;
-
-}
-
-/* Left and right column */
-.column.side {
-  width: 14%;
-  text:color:white;
-    background-color:lightgreen;
-}
-
-/* Middle column */
-.columnmiddle {
-  width: 100%;
-  padding-left: 100px;
-  border-left: 10px;
-  padding-left: 20px;
-
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column.side, .column.middle {
-    width: 100%;
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
   }
-}
-</style>
+  th, td {
+    padding: 5px;
+  }
+  th {
+    text-align: left;
+  }
+  
+  
+  #rig{
+    float: right;
+  }
+  
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  /* Style the header */
+  .header {
+    padding: 20px;
+    text-align: center;
+    background-image:url(copy.jpg);
+    background-repeat:no-repeat;
+    background-position: 100% 100%;
+  }
+  
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Create three unequal columns that floats next to each other */
+  .column {
+    float: left;
+    padding: 10px;
+  
+  }
+  
+  /* Left and right column */
+  .column.side {
+    width: 14%;
+    text:color:white;
+      background-color:lightgreen;
+  }
+  
+  /* Middle column */
+  .columnmiddle {
+    width: 100%;
+    padding-left: 100px;
+    border-left: 10px;
+    padding-left: 20px;
+  
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+      width: 100%;
+    }
+  }
+  </style>
 </head>
 <body>
 
 <div class="header">
   <h1>Rural water supply and sanitation system</h1>
-  <p><img src="./farmer.jpg " style="width: 17%"></p>
 </div>
 
 <div class="topnav">
-  <a href="#">Home</a>
-  <a href="#">Project Status</a>
-  <a href="#">Apply for a Project</a>
+  <a href="homepage_villager.html">Home</a>
+  <a href="status.html">Project Status</a>
+  <a href="request.html">Apply for a Project</a>
   <a href="#">Healthcare initiatives</a>
   
-  <a href="#">Community</a>
+  <a href="personnel_publishmsg_page.html">Community</a>
+  
   
   <a href="#" id="rig">Logout</a>
 </div>
