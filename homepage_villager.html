@@ -70,12 +70,14 @@ body {
   background-image:url(copy.jpg);
   background-repeat:no-repeat;
   background-position: 100% 100%;
+  font-style: italic;
+  
 }
 
 /* Style the top navigation bar */
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: rgb(0, 49, 58);
 }
 
 /* Style the topnav links */
@@ -104,8 +106,8 @@ body {
 /* Left and right column */
 .column.side {
   width: 14%;
-  text:color:white;
-    background-color:lightgreen;
+  color: black;
+  background-image: url(actualwater.jpg);
 }
 
 /* Middle column */
@@ -114,7 +116,11 @@ body {
   padding-left: 100px;
   border-left: 10px;
   padding-left: 20px;
-
+  color:black;
+  font-size:larger;
+  font-style: italic;
+  background-image: url(actualwater.jpg);
+  background-blend-mode: darken;
 }
 
 /* Clear floats after the columns */
@@ -145,7 +151,7 @@ function myFunction() {
 <body>
 
 <div class="header">
-  <h1>Rural water supply and sanitation system</h1>
+  <h1>Rural Water Supply and Sanitation System</h1>
 </div>
 
 
@@ -178,20 +184,24 @@ function myFunction() {
   </div>
   
   <div class="columnmiddle">
-    <h2>Rural water supply and sanitation system</h2>
 <br>
 <p style="padding-left: 10px ">
-The Rural Water Supply and Sanitation Project seek to improve access by rural populations to safe potable water and to support implementation of a program to supply water to rural populations. There are four components.
+<h4>The Rural Water Supply and Sanitation Project seek to improve access by rural populations to safe potable water and to support implementation of a program to supply water to rural populations. There are four components.</h4>
+<div class="row">
+    <div class="column">
+      <h3>Water Facilities</h3>
+      <img src="watertap.jpg" alt="Water" style="width:100%">
+    </div>
+    <div class="column">
+      <h3>Sanitation Facilities</h3>
+      <img src="sanitary.jpg" alt="Sanitation" style="width:100%">
+    </div>
+    <div class="column">
+      <h3>Participation Approach</h3>
+      <img src="community.jpg" alt="Community" style="width:100%">
+    </div>
+  </div>
 
-<br>
-For the first component, new and rehabilitated and improved water supply facilities will be installed in communities, villages, and groups of villages of stated populations. The community participation approach will integrate the provision of safe drinking water, sanitation services, and health and hygiene education.
- 
-<br>
- The second component consists of making sanitation investments; constructing safe wastewater and excreta disposal systems; using appropriate technology; a hygiene education program; and providing public installations on a pilot basis, such as block latrines for schools, small sewer collectors, and community septic tanks, as well as lagoon-type wastewater treatment. 
-The participatory approach, component three, will include community mobilization and health education, carried out mainly by local personnel.
-<br> 
-The fourth component will help provide technical back-stopping, monitoring, and evaluation for the decentralized project implementation by enlisting the services of local and international consultants.
-</p>
 
 
 <table style="width:50%">
@@ -237,6 +247,3 @@ The fourth component will help provide technical back-stopping, monitoring, and 
   
 </body>
 </html>
-
-
-
